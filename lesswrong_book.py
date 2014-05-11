@@ -184,6 +184,8 @@ class LessWrongBook(object):
       style_kwargs.update(css_kwargs)
       head.append(doc.new_tag("link", **style_kwargs))
 
+    body.append(self.GenerateToc(self.seqs))
+
     # The sequences.
     for seq in self.seqs:
       body.append(self.SequenceToHtml(seq))
@@ -569,6 +571,38 @@ Please see below for the full listing of options.""")
       if white_span_re.search(span["style"]):
         span["class"] = CssClass.SPOILER
         span["style"] = white_span_re.sub("color: default", span["style"])
+
+  def GenerateToc(self, seqs):
+    toc = self._MakeTag('div', id='toc')
+    h = self._MakeTag('h2')
+    h.string = 'Contents'
+    toc.append(h)
+    for seq in seqs:
+      self.SequenceToc(seq, toc)
+    return toc
+
+  def SequenceToc(self, seq, toc):
+    p = self._MakeTag('p')
+    b = self._MakeTag('b')
+    b.string = seq['title']
+    p.append(b)
+    toc.append(p)
+    if 'subsequences' in seq:
+      for s in seq['subsequences']:
+        self.SequenceToc(s, toc)
+      return
+    for url in seq['articles']:
+      div = self._MakeTag('div', **{'class': 'toc_entry'})
+      href = '#' + self.url_ids[url]
+      title = self._MakeTag('span', **{'class': 'title', 'href': href})
+      div.append(title)
+      page = self._MakeTag('span', **{'class': 'page', 'href': href})
+      div.append(page)
+      toc.append(div)
+
+  def _MakeTag(self, name, **attrs):
+    soup = bs4.BeautifulSoup("")
+    return soup.new_tag(name, **attrs)
 
 def _MkdirP(directory):
   """mkdir -p (create directory & parents without failing if they exist)."""

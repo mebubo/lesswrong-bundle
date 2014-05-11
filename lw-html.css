@@ -1,3 +1,6 @@
 /*
  * TODO: write me so that there's some styling to the generated HTML version.
  */
+div#toc {
+    display: none;
+}

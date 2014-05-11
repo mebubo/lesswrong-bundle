@@ -38,3 +38,23 @@ span.footnote[href^="http"] {
     font-style: italic;
     content: attr(href);
 }
+
+div#toc {
+    display: block;
+    page-break-before: right;
+    prince-page-group: start;
+    font-size: 90%;
+}
+
+div.toc_entry {
+    width = 100%
+}
+
+div.toc_entry span.title {
+    content: target-content(attr(href));
+}
+
+div.toc_entry span.page {
+     content: target-counter(attr(href), page);
+     float: right;
+}
