@@ -89,12 +89,10 @@
           "http://lesswrong.com/lw/lo/uncritical_supercriticality/",
           "http://lesswrong.com/lw/lr/evaporative_cooling_of_group_beliefs/",
           "http://lesswrong.com/lw/ls/when_none_dare_urge_restraint/",
-          "http://lesswrong.com/lw/lt/the_robbers_cave_experiment/",
           "http://lesswrong.com/lw/lv/every_cause_wants_to_be_a_cult/",
           "http://lesswrong.com/lw/lz/guardians_of_the_truth/",
           "http://lesswrong.com/lw/m0/guardians_of_the_gene_pool/",
           "http://lesswrong.com/lw/m1/guardians_of_ayn_rand/",
-          "http://lesswrong.com/lw/m2/the_litany_against_gurus/",
           "http://lesswrong.com/lw/m4/two_cult_koans/",
           "http://lesswrong.com/lw/m9/aschs_conformity_experiment/",
           "http://lesswrong.com/lw/mb/lonely_dissent/",
@@ -115,21 +113,8 @@
           "http://lesswrong.com/lw/k8/how_to_seem_and_be_deep/",
           "http://lesswrong.com/lw/jx/we_change_our_minds_less_often_than_we_think/",
           "http://lesswrong.com/lw/ka/hold_off_on_proposing_solutions/",
-          "http://lesswrong.com/lw/m9/aschs_conformity_experiment/",
           "http://lesswrong.com/lw/ma/on_expressing_your_concerns/",
-          "http://lesswrong.com/lw/mb/lonely_dissent/",
           "http://lesswrong.com/lw/s3/the_genetic_fallacy/"
-	]
-      },
-      {
-        "title": "Noticing Confusion",
-	"description": "<p>(Heavy overlap with <em>Mysterious Answers to Mysterious Questions</em>.)</p>",
-	"articles": [
-	  "http://lesswrong.com/lw/if/your_strength_as_a_rationalist/",
-	  "http://lesswrong.com/lw/ih/absence_of_evidence_is_evidence_of_absence/",
-	  "http://lesswrong.com/lw/il/hindsight_bias/",
-	  "http://lesswrong.com/lw/im/hindsight_devalues_science/",
-	  "http://lesswrong.com/lw/iw/positive_bias_look_into_the_dark/"
 	]
       },
       {
@@ -174,7 +159,6 @@
           "http://lesswrong.com/lw/ml/but_theres_still_a_chance_right/",
           "http://lesswrong.com/lw/mm/the_fallacy_of_gray/",
           "http://lesswrong.com/lw/mn/absolute_authority/",
-          "http://lesswrong.com/lw/jr/how_to_convince_me_that_2_2_3/",
           "http://lesswrong.com/lw/mo/infinite_certainty/",
           "http://lesswrong.com/lw/mp/0_and_1_are_not_probabilities/"
 	]
