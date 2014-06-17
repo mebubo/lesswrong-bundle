@@ -1,0 +1,3 @@
+python2 ./lesswrong_book.py --save-html lw.html --css-pdf lw-pdf-paper.css
+
+./lib/prince/bin/prince --javascript lw.html lw.pdf
