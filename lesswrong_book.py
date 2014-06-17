@@ -112,6 +112,8 @@ from xml.sax import saxutils
 import bs4  # Required; easy_install BeautifulSoup4
 
 try:
+  # don't use smartypants
+  raise ImportError
   from smartypants import smartyPants  # Optional; easy_install smartypants
 except ImportError:
   smartyPants = lambda text, attr="1": text
