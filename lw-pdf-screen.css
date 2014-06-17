@@ -167,7 +167,7 @@ div.article > p {
     text-align: justify;
     hyphens: auto;
     hyphenate-lines: 1;
-    hyphenate-patterns: url("/usr/local/texlive/2011/texmf/tex/generic/hyphen/hyphen.tex");
+    hyphenate-patterns: url("/mnt/sda1/usr/share/texlive/texmf-dist/tex/generic/hyphen/hyphen.tex");
 }
 
 div.article > p:first-of-type {
