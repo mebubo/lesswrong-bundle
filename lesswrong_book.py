@@ -205,6 +205,8 @@ class LessWrongBook(object):
       html_file = os.path.relpath(tmp.name)  # Make Prince warnings less verbose
                                              # by not including the full path.
 
+    return
+
     # PDF out.
     subprocess.call([self.args.prince, "--javascript",
                      html_file, self.args.output])
